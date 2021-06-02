@@ -118,10 +118,6 @@ button:active {
   color: var(--white);
 }
 
-/* .equal { */
-/*     grid-column: 3/5; */
-/* } */
-
 @keyframes blink {
   from,
   to {
