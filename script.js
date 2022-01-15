@@ -47,7 +47,7 @@ function updateDisplay() {
     newOp = " + ";
   }
   let arr = [...firstNum, newOp, ...secondNum];
-  display.textContent = arr.join("").slice(-12);
+  display.textContent = arr.join("").slice(-9);
 }
 
 allClear.addEventListener("click", () => {
