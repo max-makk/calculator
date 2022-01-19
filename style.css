@@ -96,7 +96,7 @@ body {
   outline: 1px solid rgba(206, 192, 165, 0.3);
 }
 
-.num_wrapper {
+.display_inner {
   border-right: 2px solid white;
 }
 
