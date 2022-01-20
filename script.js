@@ -148,7 +148,7 @@ function operate(o) {
       break
   }
   allClear()
-  if(result.length > 8) {
+  if(result.length > 8 && result.includes('.')) {
     result = String(Number(result).toFixed(6))
   }
   result.split('').forEach(el => leftNum.push(el))
