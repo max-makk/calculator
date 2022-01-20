@@ -18,7 +18,7 @@ function updateDisplay() {
       return el
     }
   })
-  display.textContent = replaceStr.join('').slice(-8)
+    display.textContent = replaceStr.join('')
 }
 
 btns.forEach(el => el.addEventListener('click', function() {
@@ -121,12 +121,6 @@ function addChar(id) {
   }
 }
 
-function checkForPairs() {
-  if(arr.length === 3) {
-    operate()
-  }
-}
-
 function operate(o) {
   const nextOperator = o
   if(leftNum.includes('%') || rightNum.includes('%')) {
@@ -154,6 +148,9 @@ function operate(o) {
       break
   }
   allClear()
+  if(result.length > 8) {
+    result = String(Number(result).toFixed(6))
+  }
   result.split('').forEach(el => leftNum.push(el))
   if(nextOperator) {
     operator.push(o)
